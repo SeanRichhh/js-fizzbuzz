@@ -1,27 +1,26 @@
 // TODO: Write your function in this file
-//Calling the function
 
-function fizzbuzz(lower,upper){
-    let result = []
+function fizzBuzz(lower, upper){
+    const result = [];
 
     for (let i = lower; i <= upper; i++){
-        result.push(i)
-        console.log(result);
+        if(i % 15 === 0){
+            result.push("FizzBuzz")
+        } else if( i % 3 === 0){
+            result.push("Fizz")
+        } else if( i % 5 === 0){
+            result.push("Buzz")
+        } else{
+            result.push(i)
+        }
+        
     }
-    
-
-
-return result
+    return result
 }
 
-
-
-
-
-
 // TODO: Change undefined below to the name of your function
-module.exports = fizzbuzz
+module.exports = fizzBuzz
 
 
 //The Function should store an array which i have done on line 5 
-//
+
